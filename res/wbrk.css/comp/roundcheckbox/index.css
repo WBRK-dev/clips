@@ -1,0 +1,24 @@
+.roundcheckbox {
+    height: 24px; aspect-ratio: 1;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    background-color: var(--bg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+.roundcheckbox:hover {background-color: var(--bg-grayed);}
+
+.roundcheckbox img {
+    height: 80%;
+    display: block;
+    opacity: 0;
+
+    transition: opacity 250ms;
+}
+.roundcheckbox.active img {opacity: 1;}

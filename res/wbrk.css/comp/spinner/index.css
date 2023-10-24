@@ -1,0 +1,13 @@
+div.spinner {
+    height: 24px; aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+
+    animation: spinner2 1s linear infinite;
+}
+
+@keyframes spinner2 {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}

@@ -1,0 +1,35 @@
+
+
+contextmenus {display: block;}
+
+contextmenus contextmenu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 300px;
+
+    border-radius: 10px;
+    background-color: var(--bg-grayed);
+
+    position: absolute;
+    top: var(--top); left: var(--left);
+}
+
+contextmenus contextmenu contextmenu-item {
+    display: flex; gap: 5px;
+    align-items: center;
+
+    padding: 4px 8px;
+
+    cursor: pointer;
+}
+
+contextmenus contextmenu contextmenu-item:hover {
+    background-color: var(--transp-button-hover);
+}
+
+contextmenus contextmenu contextmenu-item img {
+    height: 24px; width: 24px;
+}
+
+contextmenus contextmenu contextmenu-item[data-color="red"] {color: red;}

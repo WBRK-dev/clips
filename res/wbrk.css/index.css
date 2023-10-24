@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url("flaticon_interface_icons.css");
+
+@import url("header.css");
+
+@import url("comp/bling/index.css");
+@import url("comp/button/index.css");
+@import url("comp/input/index.css");
+@import url("comp/usericons/index.css");
+@import url("comp/popups/index.css");
+@import url("comp/roundcheckbox/index.css");
+@import url("comp/spinner/index.css");
+@import url("comp/contextmenu/index.css");
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--font-color);
+
+    --bg: #1c1c1c;
+    --bg-grayed: #272727;
+    --bg-grayed-2: #3a3a3a;
+
+    --font-color: #fff;
+    --font-color-grayed: #999999;
+    --font-color-inverted: #000000;
+
+    --transp-button-hover: #303030;
+
+    --primary-color: #0000ff;
+    --secondary-color: #6b6b6b;
+
+    --border: #444;
+    --border-highlight: #6b6b6b;
+    --border-grayed: #313131;
+}
+
+body.light {
+    --bg: #fff;
+    --bg-grayed: #b9b9b9;
+
+    --font-color: #000;
+    --font-color-grayed: #2b2b2b;
+    --font-color-inverted: #fff;
+
+    --transp-button-hover: #dadada;
+
+    --primary-color: #0000ff;
+    --secondary-color: #6b6b6b;
+
+    --border: #979797;
+}
+
+body:not(.light) img.light {display: none;}
+body.light img.dark {display: none;}
+
+
+
+*[maxcontent] {display: flex; flex-direction: row; justify-content: center;}
+maxcontent {max-width: 1000px; width: 100%;}

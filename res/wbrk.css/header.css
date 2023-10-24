@@ -1,0 +1,36 @@
+header, header > maxcontent {
+    height: 50px;
+    border-bottom: 1px solid var(--border);
+
+    display: flex; gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+header > maxcontent {padding: 0; border: none;}
+
+header .title {
+    font-size: 20px;
+    font-weight: 700;
+
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+header .right {
+    display: flex; gap: 10px;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+
+
+header .headerbutton {
+    width: 40px; height: 40px;
+    border-radius: 8px;
+
+    display: grid; place-items: center;
+}
+header .headerbutton:hover {background-color: var(--transp-button-hover);}
+
+header .headerbutton img {height: 30px;}

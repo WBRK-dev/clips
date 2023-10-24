@@ -1,0 +1,16 @@
+.usericons {
+    display: flex;
+}
+.usericons > .usericon {box-shadow: 0 0 5px #00000079;}
+.usericons > .usericon:not(:first-of-type) {margin-left: calc(var(--height, 32px) / -2.5);}
+
+.usericon {
+    border-radius: 50%;
+    background-color: #0000E7;
+    height: var(--height, 32px); aspect-ratio: 1;
+    font-size: calc((var(--height, 32px) / 2) - 2px);
+
+    display: grid; place-items: center;
+}
+
+.usericon.more {background-color: #000;}
