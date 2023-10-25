@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="res/jquery.js"></script>
-    <script src="res/copy.js"></script>
-    <script src="res/wbrk.css/comp/popups/index.js"></script>
-    <link rel="shortcut icon" href="res/favicon.png" type="image/png">
-    <link rel="stylesheet" href="res/wbrk.css/index.css">
-    <link rel="stylesheet" href="root/index.css">
-    <script src="root/index.js" defer></script>
-    <title>Clips</title>
+    <script src="../res/jquery.js"></script>
+    <script src="../res/copy.js"></script>
+    <script src="../res/wbrk.css/comp/popups/index.js"></script>
+    <link rel="shortcut icon" href="../res/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../res/wbrk.css/index.css">
+    <link rel="stylesheet" href="../root/index.css">
+    <script>url = new URL(window.location.href); let setid = url.searchParams.get("set");</script>
+    <script>
+        function contextConflict() {
+            $("video").off("contextmenu");
+            document.querySelectorAll("video").forEach(elem => elem.addEventListener("contextmenu", function(e) {e.preventDefault()}));
+        }
+    </script>
+    <script src="index.js" defer></script>
+    <title>Clipset - Clips</title>
 </head>
 <body>
-    <header><p class="title">Clips and videos</p></header>
+    <header>
+        <a class="title" href="../">Clips</a>
+    </header>
     <hero>
         <div class="videowrapper">
-            <video src="" autoplay="autoplay" loop muted></video>
-            <div class="videobutton" id="audiocontrol">
-                <i class="fi fi-sr-volume" id="enabled"></i>
-                <i class="fi fi-sr-volume-slash" id="disabled"></i>
-            </div>
-            <div class="videobutton nobackground" id="sharebutton" data-pos="top-left">
-                <button class="share" onclick="sharepopup(this)" shareurl-videolink=""><i class="fi fi-sr-share"></i>Share</button>
-            </div>
+            <video controls>
+                <source src="" type="">
+            </video>
         </div>
     </hero>
-
     <main>
-        <h2>Clip Sets</h2>
+        <h2>Clips</h2>
         <div class="grid"></div>
     </main>
 
@@ -44,3 +47,5 @@
     </popups>
 </body>
 </html>
+
+<script defer>contextConflict();</script>
