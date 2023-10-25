@@ -1,0 +1,38 @@
+{
+    "clip1": {
+        "file": "clip1.mp4",
+        "title": "Clip 1",
+        "start": 0,
+        "end": 0
+    },
+    "clip2": {
+        "file": "clip2.mp4",
+        "title": "Clip 2",
+        "start": 0,
+        "end": 0
+    },
+    "clip3": {
+        "file": "clip3.mp4",
+        "title": "Clip 3",
+        "start": 0,
+        "end": 0
+    },
+    "clip4": {
+        "file": "clip4.mp4",
+        "title": "Clip 4",
+        "start": 0,
+        "end": 0
+    },
+    "clip5": {
+        "file": "clip5.mp4",
+        "title": "Clip 5",
+        "start": 0,
+        "end": 0
+    },
+    "clip6": {
+        "file": "clip6.mp4",
+        "title": "Clip 6",
+        "start": 0,
+        "end": 0
+    }
+}

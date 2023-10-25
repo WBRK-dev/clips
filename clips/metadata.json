@@ -1,4 +1,8 @@
 {
+    "minecraftexperience": {
+        "label": "Your minecraft experience.",
+        "channel": "mcyum"
+    },
     "typesofplayers": {
         "label": "Different types of players.",
         "channel": "mcyum"
