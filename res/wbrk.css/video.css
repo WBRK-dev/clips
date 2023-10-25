@@ -4,11 +4,11 @@ hero {
     padding: 10px;
 }
 
-hero .videowrapper {
+.videowrapper {
     position: relative;
 }
 
-hero .videowrapper video {
+.videowrapper video {
     display: block;
     background-color: #000;
     border-radius: 10px;
@@ -18,7 +18,7 @@ hero .videowrapper video {
     width: calc(100vw - 20px);
 }
 
-hero .videowrapper .videobutton {
+.videowrapper .videobutton {
     position: absolute;
     top: 10px; right: 10px;
 
@@ -31,12 +31,12 @@ hero .videowrapper .videobutton {
 
     transition: opacity 250ms;
 }
-hero .videowrapper:hover .videobutton {opacity: 1;}
-hero .videowrapper .videobutton.nobackground {background-color: transparent; padding: 0;}
+.videowrapper:hover .videobutton {opacity: 1;}
+.videowrapper .videobutton.nobackground {background-color: transparent; padding: 0;}
 
-hero .videowrapper .videobutton[data-pos="top-left"] {
+.videowrapper .videobutton[data-pos="top-left"] {
     right: unset; left: 10px;
 }
 
-hero .videowrapper .videobutton.enabled i#disabled {display: none;}
-hero .videowrapper .videobutton:not(.enabled) i#enabled {display: none;}
+.videowrapper .videobutton.enabled i#disabled {display: none;}
+.videowrapper .videobutton:not(.enabled) i#enabled {display: none;}
