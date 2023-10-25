@@ -2,13 +2,14 @@ main {
     display: flex; gap: 10px;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px 10px 10px;
 }
 
 main .grid {
     display: grid; gap: 10px;
     grid-template-columns: 1fr 1fr;
 
-    max-width: 1000px;
+    width: min(1000px, 100%);
 }
 
 main .grid .item {
@@ -34,7 +35,23 @@ main .grid .item img {
     margin-bottom: 5px;
 }
 
+main .grid .item video {
+    display: block;
+    width: 100%; height: auto;
+    border-radius: 10px;
+    background-color: #000;
+
+    margin-bottom: 5px;
+}
+
 main .grid .item p.author {
     font-size: 16px;
     color: var(--font-color-grayed);
+}
+
+
+@media only screen and (max-width: 620px) {
+    main .grid {
+        grid-template-columns: 1fr;
+    }
 }
