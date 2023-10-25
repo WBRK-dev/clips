@@ -42,3 +42,11 @@ let popups = {
         $("popups").hide();
     }
 }
+
+$(function() {
+    document.querySelector("popups").addEventListener("click", function(e) {
+        if (e.target.tagName === "POPUPS") {
+            popups.hide();
+        }
+    })
+});
