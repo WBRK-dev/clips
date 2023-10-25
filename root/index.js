@@ -27,5 +27,16 @@ $(function() {
             $("video").attr("src", `clips/${selectedFolder}/${selectedClip}.mp4`);
             $("hero button").attr("shareurl-videolink", `https://wbrk-dev.github.io/clips/clips/${selectedFolder}/${selectedClip}.mp4`);
         });
+
+        fetch(`clips/channels.json`)
+        .then(j => j.json())
+        .then(j => {
+            console.log(keys);
+            keys.forEach(key => {
+                channelLabel = j[r[key].channel].label;
+
+                $("main .grid").append(`<a class="item" href="clipset/?set=${key}"><img src="clips/${key}/thumbnail.png"><p>${r[key].label}</p><p class="author">${channelLabel}</p></a>`);
+            });
+        });
     });
 });
