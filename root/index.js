@@ -25,6 +25,7 @@ $(function() {
             let selectedClip = clipKeys[Math.round((clipKeys.length - 1) * Math.random())];
 
             $("video").attr("src", `clips/${selectedFolder}/${selectedClip}.mp4`);
+            $("hero button").attr("shareurl-videolink", `https://wbrk-dev.github.io/clips/clips/${selectedFolder}/${selectedClip}.mp4`);
         });
     });
 });
