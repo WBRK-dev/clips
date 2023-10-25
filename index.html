@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/res/jquery.js"></script>
+    <script src="/res/copy.js"></script>
+    <script src="/res/wbrk.css/comp/popups/index.js"></script>
+    <link rel="shortcut icon" href="/res/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/res/wbrk.css/index.css">
+    <link rel="stylesheet" href="/root/index.css">
+    <script src="/root/index.js" defer></script>
     <title>Clips</title>
 </head>
 <body>
-    <h1>Clips to share!</h1>
+    <header><p class="title">Clips and videos</p></header>
+    <hero>
+        <div class="videowrapper">
+            <video src="/clips/multiplayermadness/clip7.mp4" autoplay="autoplay" loop muted></video>
+            <div class="videobutton" id="audiocontrol">
+                <i class="fi fi-sr-volume" id="enabled"></i>
+                <i class="fi fi-sr-volume-slash" id="disabled"></i>
+            </div>
+            <div class="videobutton nobackground" id="sharebutton" data-pos="top-left">
+                <button class="share" onclick="sharepopup(this)" shareurl-videolink="https://wbrk-dev.github.io/clips/clips/multiplayermadness/clip7.mp4"><i class="fi fi-sr-share"></i>Share</button>
+            </div>
+        </div>
+    </hero>
+
+    <popups style="display: none;">
+        <popup id="share">
+            <p class="title">Share Website</p>
+            <div class="spacer"><p>Copy link</p><button class="share" onclick="copy(this)" data-url="https://wbrk-dev.github.io/clips/"><i class="fi fi-sr-copy-alt"></i>Copy</button></div>
+            <hr>
+            <p class="title">Share Video</p>
+            <div class="spacer" id="videolink"><p>Copy link</p><button class="share" onclick="copy(this)" data-url=""><i class="fi fi-sr-copy-alt"></i>Copy</button></div>
+            <div class="spacer" id="videolink"><p>Copy link for Discord</p><button class="share" onclick="copy(this, true)" data-url=""><i class="fi fi-sr-copy-alt"></i>Copy</button></div>
+        </popup>
+    </popups>
 </body>
 </html>

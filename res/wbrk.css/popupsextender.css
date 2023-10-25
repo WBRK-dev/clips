@@ -1,0 +1,16 @@
+popups popup#share {
+    display: flex; gap: 10px;
+    flex-direction: column;
+}
+
+popups popup#share .spacer {
+    display: flex;
+    align-items: center;
+}
+
+popups popup#share .spacer > :nth-child(2) {margin-left: auto;}
+
+popups popup hr {
+    border: none;
+    border-bottom: 1px solid var(--border);
+}
